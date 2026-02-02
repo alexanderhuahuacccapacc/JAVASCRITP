@@ -13,6 +13,14 @@ console.log(numero); // esto funciona porque la variable ya fue declarada antes 
 let numero2 = 43;
 
 // con const pasa lo mismo
-console.log(numero3); // ReferenceError: Cannot access 'numero3' before initialization
+//console.log(numero3); // ReferenceError: Cannot access 'numero3' before initialization
 const numero3 = 44; 
 // por lo tanto es recomendable usar let y const en lugar de var para evitar problemas con el hoisting.
+
+// ejemplo con function
+miFuncion();
+
+function miFuncion() {
+    console.log("Hola desde la función miFuncion");
+}
+// en este caso si funciona el hoisting porque las funciones son elevadas al inicio del codigo por el interprete de javascript
